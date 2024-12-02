@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-p10-Dependency-Injection-Services"
+    }
+  },
+  "defaultProject": "angular-p10-Dependency-Injection-Services",
+  "cli": {
+    "analytics": false
+  }
 }

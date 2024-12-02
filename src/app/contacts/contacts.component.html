@@ -1,0 +1,26 @@
+<h4>Contacts</h4>
+<p>Data coming from the contacts.services</p>
+
+<ul *ngFor="let items of contactList">
+  <li>{{ items.userName }}</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>User Id</th>
+      <th>Contacts Name</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let items of contactList">
+    <tr>
+      <td>{{ items.userId }}</td>
+      <td>{{ items.userName }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+    <!-- We have to make the service "public" to use it directly here in the html file  -->
+    <!-- <button (click)="contactsServices.getUserMessage()">Trigger the public service</button> -->
+</div>
